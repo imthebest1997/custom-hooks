@@ -6,7 +6,7 @@ const init = () => {
 
 import { useEffect, useReducer } from "react";
 
-import { todoReducer } from "../todoReducer";
+import { todoReducer } from "./todoReducer";
 
 export const useTodo = () => {
   const [todos, dispatch] = useReducer(todoReducer, initialState, init);
